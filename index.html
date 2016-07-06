@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+	<script src="app.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<div class="jumbo-background">
+			<h1>Guessing Game</h1>
+			<h3>Name that Number!</h3>
+			<input id="input-box" type="number" placeholder="input number 1-100" pattern="\d{1,2}(?!\d)|100" autofocus>
+		</div>
+	</div>
+
+	<div class="row" id="buttons">
+		<div class="col-lg-4">
+			<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+			<h4>refresh</h4>
+		</div>
+		<div class="col-lg-4">
+			<span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+			<h4>submit</h4>
+		</div>
+		<div class="col-lg-4">
+			<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+			<h4>hint</h4>
+		</div>
+	</div>
+
+
+	<div class="status">
+		<div class="alert alert-danger" role="alert">
+			<h4>You are COLD!	<span class="remaining">5</span> games remaining</h4>
+		</div>
+		
+	</div>
+</div>
+
+</body>
+</html>
